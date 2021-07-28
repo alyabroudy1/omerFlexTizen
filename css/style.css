@@ -1,0 +1,89 @@
+
+body{
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: lightgray;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+p {
+    margin: 8px 0;
+}
+
+video {
+    width: 90%;
+    margin: 10px;
+    display: block;
+}
+
+.left, .right {
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+    font-size: 0.9em;
+}
+
+.logs {
+    overflow: auto;
+    height: 500px;
+    font-family: monospace;
+}
+
+#version {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+.progress {
+    margin: 10px;
+    width: 90%;
+    height: 3px;
+    border: 1px solid #4c4646;
+    visibility: hidden;
+}
+
+.bar {
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+}
+
+
+* {
+    margin:0;padding:0
+}
+
+h1 {
+    font-size:4.0em;margin:10px 0 20px 10px;color:#6587ac;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+div.scrollmenu div {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+div.scrollmenu div:hover {
+    background-color: #777;
+}

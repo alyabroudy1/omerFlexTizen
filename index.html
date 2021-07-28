@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="OmerFlex"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="https://luke-chang.github.io/js-spatial-navigation/spatial_navigation.js"></script>
+        <script type='text/javascript' src='js/main.js'></script>
+
+    <style>
+        /* Add style to the focused elements */
+        :focus {
+            outline: 2px solid red;
+        }
+    </style>
+
+    <title>OmerFlex</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body>
+<h1>OmerFlex</h1>
+<h1 id="demo"> demo</h1>
+
+
+
+<!--Main page-->
+<div id="main-page" class="ui-page ui-page-active">
+    <header class="ui-header">
+        <h2 class="ui-title">First Page</h2>
+    </header>
+    <div class="ui-content scrollmenu" id="main-container">
+
+        <!-- Gallery -->
+
+            <div class="container-fluid">
+                <input type="text" placeholder="Search.." name="search" id="search" >
+                <button type="submit" onclick="search('spider')" class="btn btn-primary"></button>
+            </div>
+            Akwam List
+            <div class="" id="list_1">
+            </div>
+
+
+        <!-- Gallery -->
+
+
+    </div>
+    <footer class="ui-footer">
+        <a href="#details-page" class="ui-btn">to second page</a>
+    </footer>
+</div>
+
+<!--Secondary page-->
+<div id="details-page" class="ui-page">
+    <header class="ui-header" id="details-container">
+        <h2 class="ui-title">details Page</h2>
+    </header>
+    <div class="ui-content"></div>
+    <footer class="ui-footer">
+        <a href="#main-page" class="ui-btn">to first page</a>
+    </footer>
+</div>
+
+<!--Third page-->
+<div id="sessions-page" class="ui-page">
+    <header class="ui-header">
+        <h2 class="ui-title">details Page</h2>
+    </header>
+    <div class="ui-content" id="sessions-container"></div>
+    <footer class="ui-footer">
+        <a href="#details-page" class="ui-btn">to details page</a>
+    </footer>
+</div>
+
+<!--fourth page-->
+<div id="episode-page" class="ui-page">
+    <header class="ui-header">
+        <h2 class="ui-title">episode Page</h2>
+    </header>
+    <div class="ui-content" id="episode-container"></div>
+    <footer class="ui-footer">
+        <a href="#sessions-page" class="ui-btn">to sessions page</a>
+    </footer>
+</div>
+
+<!--fourth page-->
+<div id="video-page" class="ui-page">
+    <header class="ui-header">
+        <h2 class="ui-title">video Page</h2>
+    </header>
+    <div class="ui-content" id="video-container">
+
+        <h1>Tizen Video App</h1>
+        <div class="left">
+            <h2>Available buttons/actions:</h2>
+            <div>
+                1 - change source<br/>
+            </div>
+            <div id="progress" class="progress">
+                <div id="bar" class="bar"></div>
+            </div>
+        </div>
+        <div class="right">
+
+            <fieldset>
+                <legend>Logs: </legend>
+                <div class="logs" id="logs"></div>
+            </fieldset>
+        </div>
+
+    </div>
+    <footer class="ui-footer">
+        <a href="#episode-page" class="ui-btn">to episode page</a>
+    </footer>
+</div>
+
+</body>
+</html>
